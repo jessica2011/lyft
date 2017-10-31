@@ -205,3 +205,104 @@ h3{
   .sociales{
     margin:0;
   }
+/*
+ * Estilos de tu proyecto
+ */
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family:'Montserrat', sans-serif;
+}
+
+h3{
+  font-size: 30px;
+  font-weight: 300px;
+  text-transform: uppercase;
+}
+
+ /*------------SECCTION CENTER---------*/
+ .center{
+   margin:5px;
+   width: 100%;
+   height: 690px;
+ }
+.information-center{
+  margin:auto;
+  height: 692px;
+  display: flex;
+}
+.box-information{
+  flex: 1 1 auto;
+}
+.info{
+  margin: 5% auto;
+  width: 70%;
+  height: 90%;
+}
+figure{
+  margin:0;
+}
+img{
+  width: 80%;
+  height:80%;
+}
+/*-------end of section center--------*/
+
+/*---------SECCTION VIDEOS----------------------*/
+
+  /*----reusable classes----*/
+.uppercase{
+   text-transform: uppercase;
+}
+.box-video{
+  width: 100%;
+  height:675px;
+  display: flex;
+}   
+
+.info-video{
+  margin: 20px;
+  width: 30%;
+}
+.video-youtube{
+  margin: 20px;
+  width: 70%;
+  background: grey;
+}
+    /*---end reusales classes----*/
+.two-parte1{
+ order: 1
+}
+.two-parte2{
+ order: 0
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/*------------FIN SECTION VIDEOS--------*/
+
+/*----SECCTION FOOTER-----------*/
+footer{
+  margin: 0;
+  background: #333447;
+  height: 638px;
+  color: white;
+}
+
+.list-footer{
+  margin: 0;
+  width: 100%;
+  display: inline-flex;
+}
+.listados{ 
+  padding: 0px;
+  margin: 5%;
+  list-style: none;
+  flex: 1 1 auto;
+}
+.sociales{
+  margin:0;
+}
