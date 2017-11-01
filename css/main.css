@@ -1,114 +1,167 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
    
     line-height: 1.3;
-    background-color: lightslategray;
+}
+
+.container-video {
+  position: absolute;
+  z-index: -5;
+  width: 100%; 
+  top:0;
+  left:0;
 }
 /**********Maqueteando header**********/
 header {
-    position: fixed;
-    width: 100%;
-    background-color: #281a40;
-    color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  width: 100%;
+  color: white;
+  top: 0;
+  overflow: auto;
 
 }
 
 .box-header {
-    width: 86%;
-    margin-left: 6%;
+  width: 86%;
+  margin-left: 6%;
 }
 
 .logo {
-    float: left;
-    width: 50%;
-    margin: 40px 0;
+  float: left;
+  width: 50%;
+  margin: 40px 0;
 }
 
 .logo img {
-    width: 10%;
+  width: 10%;
 }
 
 .box-menu {
-    float: right;
-    width: 50%;
-    margin: 40px 0;
+  float: right;
+  width: 50%;
+  margin: 40px 0;
 }
 
 header .box-menu li {
-    display: inline-block;
-    list-style: none;
-    padding-right: 40px;
+  display: inline-block;
+  list-style: none;
+  padding-right: 40px;
 }
 
 .box-menu ul {
-    float: right;
+  float: right;
 }
 
 header .box-menu li a {
-    text-decoration: none;
-    font-size: 22px;
-    color: white;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
 }
 
 header .box-menu li a:hover{
-    color: #ff00bf;
-    transition-duration: 0.5s;
+  color: #ff00bf;
+  transition-duration: 0.5s;
 }
 
 header .box-menu li .log {
-    border: 1px solid rgb(189, 189, 189);
-    padding: 10px;
-    border-radius: 5px;
+  border: 1px solid rgb(189, 189, 189);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .box-menu .fa-angle-down {
-    padding-top: 2px;
+  padding-top: 2px;
 }
 /**********Maqueteando section box-datos*********/
 .box-datos {
-    width: 40%;
-    padding: 45px;
-    padding-top: 160px;
-    background-color: white;
-    
+ 
+  margin-top: 8%;
+  width: 45%;
+  padding: 4%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin-left: 55%;
+}
+
+.container-information {
+ width: 45%;
+ box-sizing: border-box;
 }
 
 .box-datos  h2 {   
-    font-size: 40px;
-    color:#281a40;  
+  font-size: 44px;
+  color:#352384; 
+  font-weight: bold; 
 }
 .box-datos .dato-p {
-    color:#281a40;  
+  font-size: 14px;
+  color:#352384; 
+  font-weight: 300; 
+} 
+/*estilos generales del formulario*/
+.box-formulario {
+  font-size: 16px;
+  color: #bfc7d9;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 .dato-input {
-    width: 100%;
-    height: 30px;
-    border-bottom: 2px solid #281a40; 
-    margin-top: 35px;
-    margin-bottom: 35px;
-    
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #352384; 
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
-.box-datos input {
-    width: 100%;
-    font-size: 18px;
-    border: none;
-    text-decoration: none;
-    outline: none;
+.box-formulario input {
+  width: 100%;
+  border: none;
+  outline: none;
 }
 
-.box-datos .buttom {
-    text-decoration: none;
-    border-radius: 10px;
-    border: 2px solid #ff00bf;
-    padding: 15px;
-    background-color: #ff00bf;
+.box-formulario .buttom {
+  border-radius: 10px;
+  padding: 15px 20px;
+  background-color: #ff00bf;
+  color: white; 
+  cursor: pointer;
+}
+
+.box-formulario span a {
+  color: rgb(203, 201, 201);
+  font-weight: 300;
+  padding: 15px 20px;
+}
+
+.box-formulario span a:hover {
+  color: #b30086;
+  transition-duration: 0.5s;
+}
+
+.text-small {
+  margin-top: 30px;
+  color: #728099;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 2;
+}
+
+.text-small p a {
+  text-decoration: none;
+  color: #ff00bf;
+}
+
+.text-small p a:hover {
+  color: #b30086;
+  transition-duration: 0.5s;
+  text-decoration: underline; /*para que se vuelva a subrayar*/
 }
 
 /*****LUZ***************************/
@@ -205,104 +258,3 @@ h3{
   .sociales{
     margin:0;
   }
-/*
- * Estilos de tu proyecto
- */
-*{
-  box-sizing: border-box;
-}
-body{
-  font-family:'Montserrat', sans-serif;
-}
-
-h3{
-  font-size: 30px;
-  font-weight: 300px;
-  text-transform: uppercase;
-}
-
- /*------------SECCTION CENTER---------*/
- .center{
-   margin:5px;
-   width: 100%;
-   height: 690px;
- }
-.information-center{
-  margin:auto;
-  height: 692px;
-  display: flex;
-}
-.box-information{
-  flex: 1 1 auto;
-}
-.info{
-  margin: 5% auto;
-  width: 70%;
-  height: 90%;
-}
-figure{
-  margin:0;
-}
-img{
-  width: 80%;
-  height:80%;
-}
-/*-------end of section center--------*/
-
-/*---------SECCTION VIDEOS----------------------*/
-
-  /*----reusable classes----*/
-.uppercase{
-   text-transform: uppercase;
-}
-.box-video{
-  width: 100%;
-  height:675px;
-  display: flex;
-}   
-
-.info-video{
-  margin: 20px;
-  width: 30%;
-}
-.video-youtube{
-  margin: 20px;
-  width: 70%;
-  background: grey;
-}
-    /*---end reusales classes----*/
-.two-parte1{
- order: 1
-}
-.two-parte2{
- order: 0
-}
-iframe{
-    width: 100%;
-    height: 100%;
-}
-
-/*------------FIN SECTION VIDEOS--------*/
-
-/*----SECCTION FOOTER-----------*/
-footer{
-  margin: 0;
-  background: #333447;
-  height: 638px;
-  color: white;
-}
-
-.list-footer{
-  margin: 0;
-  width: 100%;
-  display: inline-flex;
-}
-.listados{ 
-  padding: 0px;
-  margin: 5%;
-  list-style: none;
-  flex: 1 1 auto;
-}
-.sociales{
-  margin:0;
-}
