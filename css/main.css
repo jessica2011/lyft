@@ -9,15 +9,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container-video {
-  position: absolute;
-  z-index: -5;
-  width: 100%; 
-  top:0;
-  left:0;
-  margin-top: -12%;
-}
 /***************Maqueteando header**************/
+.box-gif {
+  background-image: url('../assets/images/hero.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  overflow: auto;
+  position: relative;
+}
+
 header {
   font-family: Arial, Helvetica, sans-serif;
   position: fixed;
@@ -99,6 +101,7 @@ header .box-menu li .log {
 }
 
 .container-information {
+ 
  width: 45%;
  box-sizing: border-box;
 }
@@ -171,6 +174,17 @@ header .box-menu li .log {
   color: #b30086;
   transition-duration: 0.5s;
   text-decoration: underline; /*para que se vuelva a subrayar*/
+}
+
+.transition-gradient {
+  height:  7rem;
+  position: absolute;
+  right: 0;
+  bottom: 200px;
+  left: 0;
+  background: linear-gradient(transparent,#76278f);
+  width: 55%;
+  z-index: 100;
 }
 
 /**********Maqueteando section-2 box del centro*********/
