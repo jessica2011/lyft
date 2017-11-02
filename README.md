@@ -1,8 +1,3 @@
-
-Para completar este reto, hemos creado este repositorio boilerplate (plantilla
-inicial) con todos los recursos que necesitas. Esto incluye imágenes y
-estructura de carpetas y archivos donde colocarás tu código.
-
 ## Flujo de trabajo
 
 1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
